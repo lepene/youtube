@@ -44,21 +44,6 @@ def download_channel(channel_url, channel_name):
         for url in url_list:
             print(url)
             download_playlist(url, f"/home/jll/Downloads/{channel_name}/")
-    # start = "playlist?list="
-    # end = '"'
-    # start_pos = 1
-    # end_pos = 1
-    # start_pos_previous = 0
-    # c = Channel(channel_url)
-    # html = c.playlists_html
-    # while start_pos >= start_pos_previous:
-    #     start_pos = html.find(start, start_pos) + len(start)
-    #     if start_pos >= start_pos_previous:
-    #         end_pos = html.find(end, start_pos)
-    #         url = f"https://www.youtube.com/playlist?list={html[start_pos:end_pos]}"
-    #         print(url)
-    #         download_playlist(url, f"/home/jll/Downloads/{channel_name}/")
-    #         start_pos_previous = start_pos
 
 
 def download_playlist(playlist_url, out_path):
