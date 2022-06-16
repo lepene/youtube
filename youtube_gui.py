@@ -14,7 +14,6 @@ class F1(QWidget):
         main_layout.addLayout(icons_layout)
 
 
-
 app = QApplication()
 f1 = F1()
 f1.show()
